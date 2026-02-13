@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
-/// Simple 2D character walking controller.
+/// Simple 2D character walking controller using the new Input System.
 /// Attach this to a GameObject with a Rigidbody2D and a 2D collider.
 /// Optionally requires an Animator for walk/idle animations.
 /// </summary>
@@ -27,6 +28,10 @@ public class PlayerMovement2D : MonoBehaviour
     private bool isGrounded;
     private bool isFacingRight = true;
 
+    // Input Actions
+    private InputAction moveAction;
+    private InputAction jumpAction;
+
     // Animator parameter name hashes (faster than string lookups)
     private static readonly int AnimSpeed = Animator.StringToHash("Speed");
     private static readonly int AnimIsGrounded = Animator.StringToHash("IsGrounded");
@@ -36,12 +41,16 @@ public class PlayerMovement2D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
+
+        // Set up input actions using the default "Player" action map
+        moveAction = InputSystem.actions.FindAction("Move");
+        jumpAction = InputSystem.actions.FindAction("Jump");
     }
 
     private void Update()
     {
         // --- Input ---
-        horizontalInput = Input.GetAxisRaw("Horizontal");
+        horizontalInput = moveAction.ReadValue<Vector2>().x;
 
         // --- Ground Check ---
         if (groundCheck != null)
@@ -50,7 +59,7 @@ public class PlayerMovement2D : MonoBehaviour
         }
 
         // --- Jump ---
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (jumpAction.WasPressedThisFrame() && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator?.SetTrigger(AnimJump);

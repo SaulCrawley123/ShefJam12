@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class FixPipes : MonoBehaviour
 {
     public TilemapRenderer fixedTilemap;
+    public GameObject oilDrop;
     private bool playerInRange = false;
 
     void Update()
@@ -15,6 +16,7 @@ public class FixPipes : MonoBehaviour
             if (fixedTilemap != null) {
                 Debug.Log("Trigger");
                 fixedTilemap.enabled = true;
+                oilDrop.SetActive(false);
             }
         }
     }

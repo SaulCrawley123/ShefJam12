@@ -54,10 +54,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,19 +109,19 @@ TextureImporter:
       name: tank_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 0
         y: 0
-        width: 14
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1aabcb56add7a080800000000000000
+      spriteID: fef14a439cc514efe8be2b6f3e9f0848
       internalID: -9176122009169712612
       vertices: []
       indices: 
@@ -131,19 +131,19 @@ TextureImporter:
       name: tank_1
       rect:
         serializedVersion: 2
-        x: 63
+        x: 32
         y: 0
-        width: 41
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7b653ee21a685e220800000000000000
+      spriteID: 4dc82fa1cb7f745e9b6dd40e64b05c94
       internalID: 2514563993790797495
       vertices: []
       indices: 
@@ -153,20 +153,64 @@ TextureImporter:
       name: tank_2
       rect:
         serializedVersion: 2
-        x: 121
+        x: 64
         y: 0
-        width: 16
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ccc54069d836e22b0800000000000000
+      spriteID: 61667f71f8ed5439d88a6e72d38a64cd
       internalID: -5607435026271281972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf0d48b874984e5eb1750a9ddb87a2b
+      internalID: -667129088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18a07b465b314fbda07ae6354d266fe
+      internalID: 1958252764
       vertices: []
       indices: 
       edges: []
@@ -175,7 +219,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9e2c9fc6031bf49b3ad222bea929d8e3
     internalID: 0
     vertices: []
     indices: 
@@ -183,11 +227,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       tank_0: -9176122009169712612
       tank_1: 2514563993790797495
       tank_2: -5607435026271281972
+      tank_3: -667129088
+      tank_4: 1958252764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

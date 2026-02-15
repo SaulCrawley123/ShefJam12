@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Fills up the empty watering can using the purified coral water
+/// </summary>
 public class FillUpWateringCan : MonoBehaviour
 {
     [Header("Settings")]
@@ -9,6 +12,7 @@ public class FillUpWateringCan : MonoBehaviour
     [SerializeField] private Key useKey = Key.E;
 
     private bool playerInRange = false;
+    private bool hasBeenUsed = false;
     private Inventory playerInventory;
     private Keyboard keyboard;
 
@@ -18,6 +22,12 @@ public class FillUpWateringCan : MonoBehaviour
     }
 
     private void Update() {
+
+        if (hasBeenUsed)
+        {
+            Debug.Log("You have already done that!");
+            return;
+        }
 
         if (FixPipes.coralFixed)
         {
@@ -30,6 +40,8 @@ public class FillUpWateringCan : MonoBehaviour
 
                     // Give new item
                     playerInventory.AddItem(receivedItemName);
+
+                    hasBeenUsed = true;
 
                 }
                 else

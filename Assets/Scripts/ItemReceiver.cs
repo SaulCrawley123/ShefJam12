@@ -41,7 +41,18 @@ public class ItemReceiver : MonoBehaviour
                 // Mark this object as changed globally
                 WorldState.SetChanged(objectId);
 
-                Debug.Log("Used " + requiredItemName + " on " + objectId);
+                if (objectId == "rose")
+                {
+                    Debug.Log("Watered rose!");
+                }
+                else if (objectId == "sunflower")
+                {
+                    Debug.Log("Watered sunflower!");
+                }
+                else if (objectId == "corn1" || objectId == "corn2" || objectId == "corn3" || objectId == "corn4")
+                {
+                    Debug.Log("Watered corn!");
+                }
 
                 // Optionally change sprite in the current scene too
                 if (changedSprite != null && spriteRenderer != null)

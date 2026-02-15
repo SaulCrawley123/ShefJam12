@@ -1521,7 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemReceiver
   objectId: rose
-  requiredItemName: Water Bucker (Full)
+  requiredItemName: Water Bucket (Full)
   removeItem: 0
   useKey: 19
   changedSprite: {fileID: 0}

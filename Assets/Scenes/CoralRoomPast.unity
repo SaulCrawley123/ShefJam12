@@ -1151,6 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   fixedTilemap: {fileID: 1325603244}
   oilDrop: {fileID: 1310197688}
+  box: {fileID: 1174760359}
 --- !u!4 &1174760358
 Transform:
   m_ObjectHideFlags: 0

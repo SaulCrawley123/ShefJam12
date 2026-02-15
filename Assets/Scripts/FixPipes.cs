@@ -13,6 +13,12 @@ public class FixPipes : MonoBehaviour
     public static bool coralFixed = false;
 
     private Inventory playerInventory;
+    public BoxCollider2D box;
+
+    void Start()
+    {
+        //box = GameObject.GetComponent<BoxCollider2D>();
+    }
 
     void Update()
     {
@@ -27,6 +33,14 @@ public class FixPipes : MonoBehaviour
                     playerInventory.RemoveItem("spanner");
                 }
             }
+        }
+
+        if (coralFixed)
+        {
+            fixedTilemap.enabled = true;
+            coralFixed = true;
+            oilDrop.SetActive(false);
+            box.enabled = false;
         }
     }
 

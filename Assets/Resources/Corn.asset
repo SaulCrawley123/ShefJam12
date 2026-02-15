@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f813ac3ab699d042b2fd85e14fc7d04, type: 3}
-  m_Name: Sickle
+  m_Name: Corn
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
-  itemName: Sickle
-  icon: {fileID: -7243430734322799159, guid: 953bd5e7d03e7b24a9972439444b29c4, type: 3}
+  itemName: Corn
+  icon: {fileID: 4689240166119133576, guid: 8e47455f71dace6418024595adbe239c, type: 3}
   description: 

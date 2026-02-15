@@ -20,6 +20,8 @@ public class ItemReceiver : MonoBehaviour
     private Keyboard keyboard;
     private SpriteRenderer spriteRenderer;
 
+    public static bool cornWatered = false;
+
     private void Awake()
     {
         keyboard = Keyboard.current;
@@ -51,6 +53,7 @@ public class ItemReceiver : MonoBehaviour
                 }
                 else if (objectId == "corn1" || objectId == "corn2" || objectId == "corn3" || objectId == "corn4")
                 {
+                    cornWatered = true;
                     Debug.Log("Watered corn!");
                 }
 

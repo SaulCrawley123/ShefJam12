@@ -130,8 +130,9 @@ GameObject:
   - component: {fileID: 106311401}
   - component: {fileID: 106311400}
   - component: {fileID: 106311399}
+  - component: {fileID: 106311402}
   m_Layer: 0
-  m_Name: pixilart-sprite_2
+  m_Name: Dead Corn 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,6 +226,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481795518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106311402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106311398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65805b59ccee4fb98bb368ab32427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HarvestCorn
+  requiredItemName: Sickle
+  receivedItemName: Corn
+  useKey: 19
 --- !u!1 &481795517
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +637,7 @@ GameObject:
   - component: {fileID: 974697838}
   - component: {fileID: 974697837}
   m_Layer: 0
-  m_Name: pixilart-sprite (1)_1
+  m_Name: Dead Sunflower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1861,7 +1877,7 @@ GameObject:
   - component: {fileID: 1306001840}
   - component: {fileID: 1306001839}
   m_Layer: 0
-  m_Name: pixilart-sprite (1)_3
+  m_Name: Dead Rose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1966,8 +1982,9 @@ GameObject:
   - component: {fileID: 1513091406}
   - component: {fileID: 1513091405}
   - component: {fileID: 1513091404}
+  - component: {fileID: 1513091407}
   m_Layer: 0
-  m_Name: pixilart-sprite_5
+  m_Name: Dead Corn 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2061,6 +2078,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481795518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513091407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513091403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65805b59ccee4fb98bb368ab32427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HarvestCorn
+  requiredItemName: Sickle
+  receivedItemName: Corn
+  useKey: 19
 --- !u!1001 &1917746352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2174,8 +2206,9 @@ GameObject:
   - component: {fileID: 1958935854}
   - component: {fileID: 1958935853}
   - component: {fileID: 1958935852}
+  - component: {fileID: 1958935855}
   m_Layer: 0
-  m_Name: pixilart-sprite_4
+  m_Name: Dead Corn 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2269,6 +2302,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481795518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1958935855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958935851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65805b59ccee4fb98bb368ab32427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HarvestCorn
+  requiredItemName: Sickle
+  receivedItemName: Corn
+  useKey: 19
 --- !u!1 &2040153964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,8 +2328,9 @@ GameObject:
   - component: {fileID: 2040153967}
   - component: {fileID: 2040153966}
   - component: {fileID: 2040153965}
+  - component: {fileID: 2040153968}
   m_Layer: 0
-  m_Name: pixilart-sprite_3
+  m_Name: Dead Corn 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2375,6 +2424,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481795518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040153968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040153964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f65805b59ccee4fb98bb368ab32427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HarvestCorn
+  requiredItemName: Sickle
+  receivedItemName: Corn
+  useKey: 19
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

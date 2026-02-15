@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   sceneToLoad: ShipCorridorPresent
-  targetSpawnPosition: {x: 11.5, y: 0}
+  targetSpawnPosition: {x: 15, y: 0}
 --- !u!61 &103558376
 BoxCollider2D:
   m_ObjectHideFlags: 0

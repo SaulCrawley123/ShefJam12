@@ -1564,7 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   sceneToLoad: ChickenRoomPast
-  targetSpawnPosition: {x: -7, y: 0}
+  targetSpawnPosition: {x: -10, y: 0}
 --- !u!61 &2040888099
 BoxCollider2D:
   m_ObjectHideFlags: 0

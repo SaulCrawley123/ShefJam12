@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f813ac3ab699d042b2fd85e14fc7d04, type: 3}
   m_Name: Spanner
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
-  itemName: 
+  itemName: spanner
   icon: {fileID: 0}
   description: 

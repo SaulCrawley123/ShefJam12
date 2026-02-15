@@ -43,6 +43,8 @@ public class FillUpWateringCan : MonoBehaviour
 
                     hasBeenUsed = true;
 
+                    Debug.Log("Filled the watering can!");
+
                 }
                 else
                 {

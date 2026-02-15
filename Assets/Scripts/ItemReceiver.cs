@@ -22,22 +22,24 @@ public class ItemReceiver : MonoBehaviour
 
     public static bool cornWatered = false;
 
-    private void Awake()
+    void Awake()
     {
         keyboard = Keyboard.current;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    void Update()
     {
         if (playerInRange && keyboard != null && keyboard[useKey].wasPressedThisFrame)
         {
+       
             if (playerInventory != null && playerInventory.HasItem(requiredItemName))
             {
                 if (removeItem)
                 {
                     // Remove the item from inventory
                     playerInventory.RemoveItem(requiredItemName);
+                    playerInventory.AddItem("WateringCanFull");
                 }
 
                 // Mark this object as changed globally
@@ -70,7 +72,7 @@ public class ItemReceiver : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Inventory inventory = other.GetComponent<Inventory>();
         if (inventory != null)

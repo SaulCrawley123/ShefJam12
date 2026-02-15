@@ -33,7 +33,7 @@ public class FillUpWateringCan : MonoBehaviour
         {
             if (playerInRange && keyboard != null && keyboard[useKey].wasPressedThisFrame)
             {
-                if (playerInventory != null && playerInventory.HasItem(requiredItemName))
+                if (playerInventory.HasItem(requiredItemName))
                 {
                     // Remove the item from inventory
                     playerInventory.RemoveItem(requiredItemName);

@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,26 +12,34 @@ public class FixPipes : MonoBehaviour
     private bool playerInRange = false;
     public static bool coralFixed = false;
 
+    private Inventory playerInventory;
+
     void Update()
     {
         if (playerInRange && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (fixedTilemap != null) {
-                Debug.Log("Trigger");
-                fixedTilemap.enabled = true;
-                coralFixed = true;
-                oilDrop.SetActive(false);
+            if (playerInventory != null && playerInventory.HasItem("spanner")) {
+                if (fixedTilemap != null) {
+                    Debug.Log("Trigger");
+                    fixedTilemap.enabled = true;
+                    coralFixed = true;
+                    oilDrop.SetActive(false);
+                    playerInventory.RemoveItem("spanner");
+                }
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Inventory inventory = other.GetComponent<Inventory>();
+
         Debug.Log("Trigger");
         Debug.Log("Triggered by: " + other.name + ", tag: " + other.tag);
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            playerInventory = inventory;
         }
     }
 

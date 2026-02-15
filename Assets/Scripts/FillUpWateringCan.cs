@@ -16,12 +16,12 @@ public class FillUpWateringCan : MonoBehaviour
     private Inventory playerInventory;
     private Keyboard keyboard;
 
-    private void Awake()
+    void Awake()
     {
         keyboard = Keyboard.current;
     }
 
-    private void Update() {
+    void Update() {
 
         if (hasBeenUsed)
         {
@@ -64,7 +64,7 @@ public class FillUpWateringCan : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.GetComponent<Inventory>() != null)
         {

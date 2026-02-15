@@ -20,7 +20,7 @@ public class SpawnPlayer : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(rb.position);
+        // Debug.Log(rb.position);
         if (SpawnManager.hasSpawnPosition)
         {
             rb.position = SpawnManager.spawnPosition;

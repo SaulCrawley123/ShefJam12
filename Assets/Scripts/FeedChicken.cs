@@ -18,10 +18,9 @@ public class FeedChicken : MonoBehaviour
         {
             if (playerInventory != null && playerInventory.HasItem("corn"))
             {
-                    Debug.Log("Trigger");
-                    chickensFed = true;
-                    playerInventory.RemoveItem("corn");
-                }
+                Debug.Log("Trigger");
+                chickensFed = true;
+                playerInventory.RemoveItem("corn");
             }
         }
     }
@@ -30,7 +29,6 @@ public class FeedChicken : MonoBehaviour
     {
         Inventory inventory = other.GetComponent<Inventory>();
 
-        Debug.Log("Trigger");
         Debug.Log("Triggered by: " + other.name + ", tag: " + other.tag);
         if (other.CompareTag("Player"))
         {

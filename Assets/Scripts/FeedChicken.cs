@@ -16,11 +16,11 @@ public class FeedChicken : MonoBehaviour
     {
         if (playerInRange && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (playerInventory != null && playerInventory.HasItem("corn"))
+            if (playerInventory != null && playerInventory.HasItem("Corn"))
             {
                 Debug.Log("Trigger");
                 chickensFed = true;
-                playerInventory.RemoveItem("corn");
+                playerInventory.RemoveItem("Corn");
             }
         }
     }

@@ -24,18 +24,18 @@ public class HarvestCorn : MonoBehaviour
     private void Update()
     {
 
-        if (hasBeenUsed)
-        {
-            Debug.Log("You have already done that!");
-            return;
-        }
-
         if (ItemReceiver.cornWatered)
         {
             if (playerInRange && keyboard != null && keyboard[useKey].wasPressedThisFrame)
             {
                 if (playerInventory != null && playerInventory.HasItem(requiredItemName))
                 {
+                    if (hasBeenUsed)
+                    {
+                        Debug.Log("You have already done that!");
+                        return;
+                    }
+
                     // Remove the item from inventory
                     playerInventory.RemoveItem(requiredItemName);
 

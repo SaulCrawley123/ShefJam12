@@ -37,10 +37,12 @@ public class HarvestCorn : MonoBehaviour
                     }
 
                     // Remove the item from inventory
-                    playerInventory.RemoveItem(requiredItemName);
+                    playerInventory.RemoveItem(requiredItemName, false);
 
                     // Give new item
                     playerInventory.AddItem(receivedItemName);
+
+                    Debug.Log("Harvested the corn!");
 
                     hasBeenUsed = true;
 

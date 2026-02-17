@@ -6,8 +6,6 @@ public class ChickenPresentFixedCheck : MonoBehaviour
 {
     public GameObject chickenFixed;
     public GameObject chickens;
-    public GameObject winDoor;
-    public GameObject winRoomChecker;
 
     // Update is called once per frame
     void Update()
@@ -16,8 +14,6 @@ public class ChickenPresentFixedCheck : MonoBehaviour
         {
             chickenFixed.SetActive(true);
             chickens.SetActive(false);
-            winDoor.SetActive(true);
-            winRoomChecker.SetActive(true); 
         }
     }
 }

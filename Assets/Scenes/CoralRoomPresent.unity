@@ -3318,8 +3318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1d2e166e486454ca228ce93f6de783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FillUpWateringCan
-  requiredItemName: Watering Can (Empty)
-  receivedItemName: Watering Can (Full)
+  requiredItemName: WateringCanEmpty
+  receivedItemName: WateringCanFull
   useKey: 19
 --- !u!61 &1666104795
 BoxCollider2D:
